@@ -1,0 +1,12 @@
+1. First install the vmbuilder package > (python-vm-builder 0.12.4+bzr464-0ubuntu1)
+2. Make sure the .conf files contain the right path to the firsboot.sh
+3. Build the image with vmbuilder.
+4. Then execute ./afterbuild.sh <appname>
+5. Start the vm in the vmware player.
+6. After boot remove the /etc/udev/rules.d/70-persistent-net-rules and halt the vm.
+7. Then execute ./cleanup.sh <appname>
+8. Then execute ./package.sh <appname>
+9. Sign the package with the gpg key.
+10. Upload to openapp/vmware directory
+11. ????
+12. PROFIT
